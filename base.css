@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* 酒紅色系全域變數與重置設定 */
+:root {
+  --bg-main: #fcf9f7;          /* 暖白/米白背景 */
+  --bg-card: #ffffff;          /* 純白卡片 */
+  --text-dark: #2b1a1d;         /* 深沉暗紅黑文字 */
+  --text-muted: #6e585c;       /* 啞光灰紅次要文字 */
+  --primary: #6b1d2f;          /* 經典酒紅 (Burgundy Main) */
+  --primary-hover: #4a121f;    /* 深酒紅 */
+  --accent-gold: #c89d56;      /* 典雅香檳金 */
+  --accent-soft: #f4e9eb;      /* 淡酒紅襯底色 */
+  --border-color: #e8d7da;     /* 柔和紅粉邊框 */
+  --font-sans: "Microsoft JhengHei", "PingFang TC", -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.85;
+  color: var(--text-dark);
+  background-color: var(--bg-main);
+  padding-bottom: 2rem;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-gold);
+  text-decoration: underline;
+}
+
+.section-divider {
+  margin: 2rem 0;
+  border: 0;
+  border-top: 1px solid var(--border-color);
+}
